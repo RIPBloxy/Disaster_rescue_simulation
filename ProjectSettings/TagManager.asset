@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 3
   tags:
   - CinemachineTarget
+  - Tree
+  - Buildings
+  - Car
+  - Bench
+  - Info
   layers:
   - Default
   - TransparentFX
