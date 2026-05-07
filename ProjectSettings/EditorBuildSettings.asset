@@ -14,6 +14,24 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/destroyedScene.unity
     guid: 3c8b43155b587414f80b86c7e66d1090
+  - enabled: 1
+    path: Assets/Scenes/Death.unity
+    guid: 5d88695fb600fa54fa348d864b134472
+  - enabled: 1
+    path: Assets/Scenes/Completed.unity
+    guid: b80f5e17ccdf3db4593276f292c0b21d
+  - enabled: 1
+    path: Assets/Scenes/MainmenuScene.unity
+    guid: dc2e9a9e6112fc546982a0630d67be68
+  - enabled: 0
+    path: Assets/Scenes/Exitmessage.unity
+    guid: ed4a9b9c9a2ca614d9e5e8a5877cc2de
+  - enabled: 1
+    path: Assets/Scenes/Comming soon.unity
+    guid: eeab444f4f4419841b8fb3f56203a43e
+  - enabled: 1
+    path: Assets/Scenes/Gameover.unity
+    guid: 849839ebd74d1734fb3e7b39b3f413d1
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
