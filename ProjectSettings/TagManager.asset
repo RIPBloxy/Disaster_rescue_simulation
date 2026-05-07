@@ -10,6 +10,8 @@ TagManager:
   - Car
   - Bench
   - Info
+  - Information
+  - fire
   layers:
   - Default
   - TransparentFX
