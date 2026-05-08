@@ -20997,6 +20997,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2145359019}
     m_Modifications:
+    - target: {fileID: 2543959227626392056, guid: 93587572c0ddb6e4b82b059e762dfb27, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 299f8b714d65d4f458cb4c23f49bf152, type: 2}
     - target: {fileID: 8479672975577207682, guid: 93587572c0ddb6e4b82b059e762dfb27, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.43
@@ -22185,6 +22189,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2145359019}
     m_Modifications:
+    - target: {fileID: 1350893284436460202, guid: 8a330a53a72cdce43b6a29f5d3831173, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 299f8b714d65d4f458cb4c23f49bf152, type: 2}
     - target: {fileID: 4926791329565251792, guid: 8a330a53a72cdce43b6a29f5d3831173, type: 3}
       propertyPath: m_LocalScale.x
       value: -5.1600003
@@ -24677,7 +24685,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000030517578, y: -174.99998}
+  m_AnchoredPosition: {x: 0, y: -175}
   m_SizeDelta: {x: -471.3865, y: -400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1009004852
@@ -29558,7 +29566,6 @@ RectTransform:
   m_Children:
   - {fileID: 1746721093}
   - {fileID: 867394661}
-  - {fileID: 1495738975}
   - {fileID: 1009004851}
   - {fileID: 1343016965}
   m_Father: {fileID: 210040891}
@@ -35900,6 +35907,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Doctor (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: b703d38cebd4f8b47b8f976c46e079de, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 05cd596cff3a35741b136c48a4512775, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: -840777845830954692, guid: b703d38cebd4f8b47b8f976c46e079de, type: 3}
@@ -37971,78 +37982,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: e0e851c58997b9c438fae494e3412749, type: 3}
   m_PrefabInstance: {fileID: 1824284025}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1495738974
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1495738975}
-  - component: {fileID: 1495738977}
-  - component: {fileID: 1495738976}
-  m_Layer: 5
-  m_Name: setting
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1495738975
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1495738974}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.28830278, y: 0.25003, z: 0.29342}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1191547532}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 365.9, y: 197.06}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1495738976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1495738974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Texture: {fileID: 2800000, guid: e5f6ad79599a1f243b0fe5358be6806d, type: 3}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
---- !u!222 &1495738977
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1495738974}
-  m_CullTransparentMesh: 1
 --- !u!1001 &1497460860
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45542,7 +45481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 389484606}
-  timeLeft: 2
+  timeLeft: 200
 --- !u!1001 &1751299025
 PrefabInstance:
   m_ObjectHideFlags: 0

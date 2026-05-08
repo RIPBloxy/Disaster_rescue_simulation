@@ -5,6 +5,8 @@ public class CompletedButtons : MonoBehaviour
 {
     void Start()
     {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         // Destroy the persistent player when completed screen loads
         // so it starts fresh when we restart
         PlayerPersists player = FindObjectOfType<PlayerPersists>();
