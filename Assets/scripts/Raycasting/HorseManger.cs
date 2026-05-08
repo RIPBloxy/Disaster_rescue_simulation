@@ -9,7 +9,7 @@ public class HorseManager : MonoBehaviour
     {
         foreach (Transform child in transform)
         {
-            if (child.tag == "Information")
+            if (child.tag == "information")
             {
                 Children.Add(child.gameObject);
             }
