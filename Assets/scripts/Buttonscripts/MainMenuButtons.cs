@@ -6,7 +6,7 @@ public class MainMenuButtons : MonoBehaviour
     // Play button → goes to MainScene
     public void OnPlayPressed()
     {
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("Lobby");
     }
 
     // Setting button → shows Coming Soon
