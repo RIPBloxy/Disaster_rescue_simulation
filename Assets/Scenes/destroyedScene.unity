@@ -5774,7 +5774,8 @@ PrefabInstance:
       value: Lowpoly_Doctor@Talking
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: -840777845830954692, guid: 48aa1863e49d447ce937f24bac02e342, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48aa1863e49d447ce937f24bac02e342, type: 3}
