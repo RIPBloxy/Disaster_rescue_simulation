@@ -38740,7 +38740,7 @@ MonoBehaviour:
   shakeDelay: 10
   duration: 2
   magnitude: 0.15
-  targetSceneName: DestroyedScene
+  targetSceneName: destroyedScene
   fadePanel: {fileID: 980145731}
   fadeDuration: 1.5
 --- !u!4 &1638197202
