@@ -3,7 +3,29 @@ using UnityEngine.SceneManagement;
 
 public class StartButtons : MonoBehaviour
 {
-    // Start button → goes to MainMenu
+    void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
+    void Update()
+    {
+        if (Input.GetKey(KeyCode.LeftControl))
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
+
+        if (Input.GetKeyDown(KeyCode.P))
+            OnStartPressed();
+    }
+
     public void OnStartPressed()
     {
         DestroyPersistentPlayer();

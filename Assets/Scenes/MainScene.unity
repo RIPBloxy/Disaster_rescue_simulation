@@ -28269,6 +28269,57 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6127395625895404759, guid: 64db8d48fab1ceb43a8ee5d52643029a, type: 3}
   m_PrefabInstance: {fileID: 1846631134}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1166377668
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1166377670}
+  - component: {fileID: 1166377669}
+  m_Layer: 0
+  m_Name: music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1166377669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166377668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50b80ca5bdc6c84c89a8de5fb6f4dbd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcType: 0
+  survivorHelpClip: {fileID: 0}
+  doctorTalkClip: {fileID: 0}
+  triggerRadius: 15
+  minDistance: 2
+  maxDistance: 15
+  maxVolume: 1
+--- !u!4 &1166377670
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166377668}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 304.59616, y: 11.053739, z: 738.00116}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1171737916
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38743,6 +38794,11 @@ MonoBehaviour:
   targetSceneName: destroyedScene
   fadePanel: {fileID: 980145731}
   fadeDuration: 1.5
+  earthquakeClip: {fileID: 8300000, guid: 65b08479c51514918b1c48a7b0fb3877, type: 3}
+  earthquakeVolume: 0.8
+  soundDuration: 4
+  fadeInDuration: 1
+  fadeOutDuration: 1
 --- !u!4 &1638197202
 Transform:
   m_ObjectHideFlags: 0
@@ -51680,3 +51736,4 @@ SceneRoots:
   - {fileID: 1887329367}
   - {fileID: 1962687718}
   - {fileID: 764879182}
+  - {fileID: 1166377670}
