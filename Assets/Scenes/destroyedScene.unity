@@ -57268,13 +57268,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50b80ca5bdc6c84c89a8de5fb6f4dbd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcType: 0
-  survivorHelpClip: {fileID: 0}
-  doctorTalkClip: {fileID: 0}
-  triggerRadius: 15
-  minDistance: 2
-  maxDistance: 15
-  maxVolume: 1
+  walkClip: {fileID: 0}
+  runClip: {fileID: 0}
+  jumpClip: {fileID: 0}
+  lobbyMusic: {fileID: 0}
+  footstepVolume: 0.8
+  musicVolume: 0.4
+  duckVolume: 0.1
+  walkInterval: 0.5
+  runInterval: 0.28
 --- !u!4 &2032324466
 Transform:
   m_ObjectHideFlags: 0

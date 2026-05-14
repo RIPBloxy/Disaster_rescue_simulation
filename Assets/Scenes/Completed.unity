@@ -525,6 +525,7 @@ GameObject:
   - component: {fileID: 540382755}
   - component: {fileID: 540382754}
   - component: {fileID: 540382756}
+  - component: {fileID: 540382757}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -642,6 +643,14 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!81 &540382757
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540382752}
+  m_Enabled: 1
 --- !u!1 &558525599
 GameObject:
   m_ObjectHideFlags: 0
@@ -1432,7 +1441,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1556768045}
-  - component: {fileID: 1556768044}
+  - component: {fileID: 1556768046}
   m_Layer: 0
   m_Name: audio
   m_TagString: Untagged
@@ -1440,22 +1449,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1556768044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1556768043}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df64aa415665bd0dd9cde461e0c1ff7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  musicClip: {fileID: 8300000, guid: 4f60a835b25220c54bb37bb9d4e95c18, type: 3}
-  volume: 0.5
-  fadeIn: 1.5
-  fadeOut: 1.5
 --- !u!4 &1556768045
 Transform:
   m_ObjectHideFlags: 0
@@ -1471,6 +1464,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1556768046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556768043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55efed5de850d417abb470e36c4d9d6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicClip: {fileID: 8300000, guid: 4f60a835b25220c54bb37bb9d4e95c18, type: 3}
+  volume: 0.5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
