@@ -25,4 +25,8 @@ public class CompletedButtons : MonoBehaviour
     {
         SceneManager.LoadScene("MainmenuScene");
     }
+    public void OnCreditPressed()
+    {
+        SceneManager.LoadScene("Creditscene");
+    }
 }
