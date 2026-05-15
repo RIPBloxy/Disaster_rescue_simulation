@@ -3,31 +3,36 @@ using UnityEngine.SceneManagement;
 
 public class StartButtons : MonoBehaviour
 {
+    [Header("Loading Screen")]
+    public GameObject loadingScreenPanel;
+
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
+        if (loadingScreenPanel != null)
+            loadingScreenPanel.SetActive(false);
     }
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.LeftControl))
-        {
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-        }
-        else
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-        }
-
         if (Input.GetKeyDown(KeyCode.P))
             OnStartPressed();
     }
 
     public void OnStartPressed()
     {
+        StartCoroutine(LoadWithDelay());
+    }
+
+    private System.Collections.IEnumerator LoadWithDelay()
+    {
+        if (loadingScreenPanel != null)
+            loadingScreenPanel.SetActive(true);
+
+        yield return new WaitForSeconds(2f);
+
         DestroyPersistentPlayer();
         SceneManager.LoadScene("Mainscene");
     }
