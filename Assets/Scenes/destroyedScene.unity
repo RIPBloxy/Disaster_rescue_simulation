@@ -59179,7 +59179,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2032324466}
-  - component: {fileID: 2032324465}
+  - component: {fileID: 2032324467}
   m_Layer: 0
   m_Name: music
   m_TagString: Untagged
@@ -59187,27 +59187,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2032324465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2032324464}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50b80ca5bdc6c84c89a8de5fb6f4dbd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walkClip: {fileID: 0}
-  runClip: {fileID: 0}
-  jumpClip: {fileID: 0}
-  lobbyMusic: {fileID: 0}
-  footstepVolume: 0.8
-  musicVolume: 0.4
-  duckVolume: 0.1
-  walkInterval: 0.5
-  runInterval: 0.28
 --- !u!4 &2032324466
 Transform:
   m_ObjectHideFlags: 0
@@ -59223,6 +59202,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2032324467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032324464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ede7bf212992cce719201d2e8f4fe53f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicClip: {fileID: 0}
+  volume: 0.5
+  fadeIn: 1.5
+  fadeOut: 1.5
+  walkClip: {fileID: 8300000, guid: de1e70b364dad780b94453f1cf01b96b, type: 3}
+  runClip: {fileID: 8300000, guid: b478792b2cb156759aa97c2edba65bc8, type: 3}
+  walkVolume: 0.4
+  runVolume: 0.5
+  jumpClip: {fileID: 8300000, guid: 5420a70e2ae14c049b41d212483f6a53, type: 3}
+  jumpVolume: 1
 --- !u!1 &2033279741
 GameObject:
   m_ObjectHideFlags: 0
