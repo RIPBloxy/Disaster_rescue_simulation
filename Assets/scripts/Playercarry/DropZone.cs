@@ -22,11 +22,13 @@ public class DropZone : MonoBehaviour
 
     public void NPCDropped(GameObject npc)
     {
-        // Place NPC exactly at this bed's dropPoint
         npc.transform.position = dropPoint.position;
         npc.transform.rotation = dropPoint.rotation;
 
-        isOccupied = true; // bed is now taken, no more NPCs can be dropped here
+        NPCCarry npcCarry = npc.GetComponent<NPCCarry>();
+        if (npcCarry != null) npcCarry.SetPlaced();
+
+        isOccupied = true;
         ScoreManager.Instance.AddScore(scoreValue);
     }
 

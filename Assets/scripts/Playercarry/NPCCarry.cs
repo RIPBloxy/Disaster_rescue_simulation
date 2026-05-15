@@ -7,6 +7,7 @@ public class NPCCarry : MonoBehaviour
     private Animator anim;
     private NPCSOUND npcSound;
     private bool hasBeenPickedUp = false;
+    private bool isPlaced = false;
 
     void Start()
     {
@@ -18,6 +19,8 @@ public class NPCCarry : MonoBehaviour
 
     public void GetPickedUp()
     {
+        if (isPlaced) return;
+
         if (!hasBeenPickedUp)
         {
             hasBeenPickedUp = true;
@@ -40,18 +43,16 @@ public class NPCCarry : MonoBehaviour
             anim.ResetTrigger("GoSleep");
             anim.SetTrigger("GoIDLE");
         }
-
-        // Keep renderers ON so legs/butt are visible over shoulder
-        // But put NPC on a layer the camera near-clip won't block
-        SetLayerRecursively(gameObject, LayerMask.NameToLayer("Default"));
     }
 
     public void GetDropped()
     {
         if (rb != null)
         {
-            rb.constraints = RigidbodyConstraints.None;
-            rb.isKinematic = false;
+            rb.isKinematic = true;
+            rb.linearVelocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+            rb.constraints = RigidbodyConstraints.FreezeAll;
         }
 
         if (col != null) col.enabled = true;
@@ -66,10 +67,17 @@ public class NPCCarry : MonoBehaviour
         SetLayerRecursively(gameObject, LayerMask.NameToLayer("Default"));
     }
 
+    public void SetPlaced()
+    {
+        isPlaced = true;
+        if (col != null) col.enabled = false;
+    }
+
     void SetLayerRecursively(GameObject obj, int layer)
     {
         obj.layer = layer;
         foreach (Transform child in obj.transform)
             SetLayerRecursively(child.gameObject, layer);
     }
+    public bool IsPlaced() => isPlaced;
 }

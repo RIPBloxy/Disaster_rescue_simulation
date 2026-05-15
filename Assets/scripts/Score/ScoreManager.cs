@@ -18,7 +18,7 @@ public class ScoreManager : MonoBehaviour
     {
         score += amount;
         scoreText.text = "Score: " + score;
-        if (score >= 80)
+        if (score >= 60)
         {
             SceneManager.LoadScene("Completed");
         }

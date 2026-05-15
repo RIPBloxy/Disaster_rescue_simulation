@@ -14,6 +14,8 @@ public class PlayerCarry : MonoBehaviour
 
     [Header("Carry Rotation")]
     public float rotationX = 90f;
+    public float rotationY = 0f;
+    public float rotationZ = 0f;
 
     private TMP_Text pickupPrompt;
     private TMP_Text dropPrompt;
@@ -51,8 +53,8 @@ public class PlayerCarry : MonoBehaviour
             carriedNPC.transform.position = transform.position + shoulderOffset;
             carriedNPC.transform.rotation = Quaternion.Euler(
                 rotationX,
-                transform.eulerAngles.y,
-                0f
+                transform.eulerAngles.y + rotationY,
+                rotationZ
             );
         }
 
@@ -77,7 +79,10 @@ public class PlayerCarry : MonoBehaviour
     bool IsNPCNearby()
     {
         foreach (Collider hit in Physics.OverlapSphere(transform.position, pickupRange))
-            if (hit.GetComponent<NPCCarry>() != null) return true;
+        {
+            NPCCarry npc = hit.GetComponent<NPCCarry>();
+            if (npc != null && !npc.IsPlaced()) return true;
+        }
         return false;
     }
 
@@ -86,7 +91,7 @@ public class PlayerCarry : MonoBehaviour
         foreach (Collider hit in Physics.OverlapSphere(transform.position, pickupRange))
         {
             NPCCarry npc = hit.GetComponent<NPCCarry>();
-            if (npc != null)
+            if (npc != null && !npc.IsPlaced())
             {
                 carriedNPC = npc;
                 npc.GetPickedUp();

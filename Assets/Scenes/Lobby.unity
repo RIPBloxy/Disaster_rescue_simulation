@@ -24229,6 +24229,10 @@ MonoBehaviour:
   carryPosition: {fileID: 274449747}
   pickupRange: 2
   pickupKey: 101
+  offsetRight: 0.5
+  offsetUp: 1
+  offsetForward: -0.3
+  rotationX: 90
 --- !u!114 &897307954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48016,8 +48020,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e9741a2193a3cf1438cd840681602eb5, type: 2}
+  m_sharedMaterial: {fileID: 5948804744953360126, guid: e9741a2193a3cf1438cd840681602eb5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
